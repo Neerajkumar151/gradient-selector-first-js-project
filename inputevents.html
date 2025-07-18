@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input event</title>
+
+     <style>
+        /* Base Reset & Dark Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #parentcont {
+            margin-bottom: 20px;
+        }
+
+        #inputbox {
+            padding: 10px 15px;
+            width: 300px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        #inputbox::placeholder {
+            color: #aaaaaa;
+        }
+
+        #outputs {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            width: 320px;
+        }
+
+        #outputs p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .inputvalue {
+            color: #90caf9;
+        }
+
+        .inputname {
+            color: #f48fb1;
+        }
+
+        .inputtype {
+            color: #a5d6a7;
+        }
+
+        .eventtype {
+            color: #ffcc80;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div id="parentcont">
+            <input type="text" id="inputbox" name="username" placeholder="Type Anything..."/>
+        </div>
+        <div id="outputs">
+            <p class="inputvalue">Input Value </p>
+            <p class="inputname">Input Name</p>
+            <p class="inputtype">Input Type</p>
+            <p class="eventtype">Evenet Type</p>
+        </div>
+
+    </div>
+
+    <script>
+        let handleInput=(event)=>{
+            console.log(event)
+
+            console.log(event.target.value);
+            console.log(event.target.name);
+            console.log(event.inputType);
+            console.log(event.type);
+
+            document.querySelector(".inputvalue").textContent=`Input Value: ${event.target.value}`;
+            document.querySelector(".inputname").textContent=`Input Name: ${event.target.name}`;
+            document.querySelector(".inputtype").textContent=`Input Type: ${event.inputType}`;
+            document.querySelector(".eventtype").textContent=`Evenet Type: ${event.type}`;
+        }
+
+        let inputdata=document.getElementById("inputbox");
+        // inputdata.addEventListener("input",handleInput);
+        inputdata.addEventListener("change",handleInput);
+        // when you put your cursoe otside the input field and click on the browser anywhere except he field than the outputs change.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Selector</title>
+
+    <style>
+        body {
+            background: radial-gradient(circle,rgba(66, 139, 168, 1) 0%, rgba(84, 154, 168, 1) 47%, rgba(237, 221, 83, 1) 100%);
+            text-align: center;
+        }
+        #parent{
+            margin-top: 30px;
+        }
+        #child1 {
+            margin-top: 20%;
+        }
+        #btn1 {
+            color: white;
+            height: 40px;
+            width: 130px;
+            border-radius: 15px;
+            background-color: rgb(19, 30, 94);
+        }
+        #btn2 {
+            color: white;
+            background-color: rgb(107, 224, 78);
+            margin-left: 90px;
+            height: 40px;
+            width: 130px;
+            border-radius: 15px;
+        }
+        .copycode {
+        margin: 20px auto;
+        padding: 15px;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+        border-left: 5px solid white;
+        color: white;
+        font-family: monospace;
+        font-size: 16px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <button id="btn1">#051973</button>
+            <button id="btn2">#008793</button>
+        </div>
+        <h4 style="color: white;">Copy Your Code From Here</h4>
+        <div class="copycode"> background-image: linear-gradient(to right,rgb(92,145,229), rgb(152,63,198))</div>
+    </div>
+    <script>
+        let btn1=document.getElementById("btn1");
+        let btn2=document.getElementById("btn2");
+        
+    </script>
+</body>
+</html>
