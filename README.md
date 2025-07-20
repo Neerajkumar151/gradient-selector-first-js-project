@@ -66,7 +66,7 @@ Try it live on [GitHub Pages](https://neerajkumar151.github.io/gradient-selector
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="D:\CODE\CODE\frontend\Gradient Selector\ssss.PNG" width="80%" alt="UI Screenshot">
+  <img src="ssss.PNG" width="80%" alt="UI Screenshot">
 </p>
 
 ---
