@@ -1,4 +1,5 @@
-<p align="center"># 🎨 Gradient Selector</p>
+<h1 align="center">🎨 Gradient Selector</h1>
+
 
 
 <p align="center">
@@ -11,12 +12,6 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
-
----
-
-## 🎬 Preview
-
-![Gradient Selector Demo](https://user-images.githubusercontent.com/placeholder/gradient-selector-demo.gif)
 
 ---
 
