@@ -1,144 +1,163 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Selector</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gradient Selector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            background: radial-gradient(circle,rgba(66, 139, 168, 1) 0%, rgba(84, 154, 168, 1), rgba(237, 221, 83, 1) 100%);
-            text-align: center;
-        }
-        #parent{
-            margin-top: 30px;
-        }
-        #child1 {
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-            margin-top: 20%;
-        }
-        #btn1 {
-            padding: 10px 20px;
-            font-size: 20px;
-            border: none;
-            border-radius: 18px;
-            background-color: #4CAF50;
-            color: white;
-            transition: all 0.5s ease-in-out;
-        }
-        #btn1:hover{
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            transform: translateY(-4px);
-            padding: 15px 25px;
-        }
-        #btn2 {
-            margin-left: 50px;
-            padding: 10px 20px;
-            font-size: 20px;
-            border: none;
-            border-radius: 18px;
-            background-color: #ddeb11;
-            color: white;
-            transition: all 0.5s ease-in-out;
-        }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to right, #051973, #008793);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
 
-        #btn2:hover{
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            transform: translateY(-4px);
-            padding: 15px 25px;
-        }
+    #parent {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      color: #fff;
+    }
 
-        h4 {
-            margin: 20px auto;
-            padding: 10px;
-            border-radius: 15px;
-            width: 20%;
-            background-color: rgba(200, 255, 255, 0.1);
-            text-align: center;
-            transition: all 0.5s ease-in-out;
-        }
-        h4:hover{
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            transform: translateY(-4px);
-            padding: 15px 25px;
-        }
+    #child1 {
+      margin-bottom: 30px;
+    }
 
-        .copycode {
-        margin: 20px auto;
-        padding: 15px;
-        width: 60%;
-        background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
-        border-left: 5px solid white;
-        color: white;
-        font-family: monospace;
-        font-size: 16px;
-        border-radius: 14px;
-        text-align: left;
-        transition: all 0.5s ease-in-out;
+    button {
+      background-color: #162e98;
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+    #btn2 {
+        background-color: #3654d8;
+    }
 
-        }
-        .copycode:hover {
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            transform: translateY(-4px);
-            padding: 20px;
-        }
+    #btn1, #btn2 {
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
+    #btn1:hover, #btn2:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
 
-    </style>
+    h4 {
+      margin: 20px auto;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .copycode {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 18px;
+      border-left: 5px solid white;
+      border-radius: 12px;
+      font-family: monospace;
+      font-size: 16px;
+      word-break: break-all;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .copycode:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 500px) {
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+      }
+
+      .copycode {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div id="parent">
-        <div id="child1">
-            <button id="btn1">#051973</button>
-            <button id="btn2">#008793</button>
-        </div>
-        <h4 style="color: white;">Copy Your Code From Here</h4>
-        <div class="copycode"> background-image: linear-gradient(to right,rgb(92,145,229), rgb(152,63,198))</div>
+  <div id="parent">
+    <div id="child1">
+      <button id="btn1">#051973</button>
+      <button id="btn2">#008793</button>
     </div>
-    <script>
+    <h4>🎨 Copy Your CSS Gradient Code</h4>
+    <div class="copycode">background-image: linear-gradient(to right, rgb(92,145,229), rgb(152,63,198))</div>
+  </div>
 
-        let btn1=document.getElementById("btn1");
-        let btn2=document.getElementById("btn2");
-        let bgcode=document.querySelector(".copycode");
-        let rgb1= `rgba(66, 139, 168, 1) 0%, rgba(84, 154, 168, 1) 47%`;
-        let rgb2=`#000000`;
+  <script>
+    let btn1 = document.getElementById("btn1");
+    let btn2 = document.getElementById("btn2");
+    let bgcode = document.querySelector(".copycode");
 
-        let hexcode = ()=> {
-             let hexvalue="0123456789abcdef";
-             let color="#";
-             for(let i=0; i<6; i++){
-                color=color + (hexvalue[Math.floor(Math.random()*16)]);
-            }
-            return color;
-        }
+    let rgb1 = "#051973";
+    let rgb2 = "#008793";
 
-        let action1=()=> {
-            rgb1=hexcode();
-            console.log(rgb1);
-            document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            bgcode.innerHTML=`background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            btn1.innerHTML= `${rgb1}`;
-            btn1.style.backgroundColor= `${rgb1}`;
-        };
+    const hexcode = () => {
+      let hex = "0123456789abcdef";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
 
-        let action2=()=> {
-            rgb2=hexcode();
-            console.log(rgb2);
-            document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            bgcode.innerHTML=`background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-            btn2.innerHTML= `${rgb2}`;
-            btn2.style.backgroundColor= `${rgb2}`;
-        }
-        
+    const updateGradient = () => {
+      document.body.style.backgroundImage = `linear-gradient(to right, ${rgb1}, ${rgb2})`;
+      bgcode.innerText = `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+    };
 
+    const action1 = () => {
+      rgb1 = hexcode();
+      btn1.textContent = rgb1;
+      btn1.style.backgroundColor = rgb1;
+      updateGradient();
+    };
 
-        btn1.addEventListener("click",action1);
-        btn2.addEventListener("click",action2);
-        bgcode.addEventListener("click", ()=> {
-            navigator.clipboard.writeText(bgcode.innerText);
-            alert(`Copied The Text: ${bgcode.innerText}`);
-        })
-        
-    </script>
+    const action2 = () => {
+      rgb2 = hexcode();
+      btn2.textContent = rgb2;
+      btn2.style.backgroundColor = rgb2;
+      updateGradient();
+    };
+
+    btn1.addEventListener("click", action1);
+    btn2.addEventListener("click", action2);
+
+    bgcode.addEventListener("click", () => {
+      navigator.clipboard.writeText(bgcode.innerText);
+      alert(`✅ Copied: ${bgcode.innerText}`);
+    });
+
+    updateGradient();
+  </script>
 </body>
 </html>
