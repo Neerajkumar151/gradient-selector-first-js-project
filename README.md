@@ -1,8 +1,5 @@
 # 🎨 Gradient Selector
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/placeholder/banner-gradient.png" alt="Gradient Selector Banner" width="100%" />
-</p>
 
 <p align="center">
   <b>A clean and interactive tool to create beautiful CSS linear gradients with just a click.</b><br/>
