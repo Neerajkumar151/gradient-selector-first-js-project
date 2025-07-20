@@ -51,7 +51,7 @@
 
 ## 🔍 Demo
 
-Try it live on [GitHub Pages](https://neerajkumar151.github.io/gradient-selector-first-js-project/) *(ONLY DEMO)*
+Try it live on [GitHub Pages](https://neerajkumar151.github.io/gradient-selector-first-js-project/gradient_selector) *(ONLY DEMO)*
 
 ---
 
