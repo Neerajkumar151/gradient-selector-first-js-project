@@ -53,8 +53,8 @@
 
 
 
-<p>Try it live on <a href="https://neerajkumar151.github.io/gradient-selector-first-js-project/gradient_selector" target="_blank">
-[GitHub Pages]</a></p>
+<p>Try it live on <a href="https://neerajkumar151.github.io/gradient-selector-first-js-project/gradient_selector" target="_blank">GitHub Pages</a></p>
+
 
 
 ---
