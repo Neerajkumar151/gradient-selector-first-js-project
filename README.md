@@ -1,4 +1,4 @@
-# 🎨 Gradient Selector
+<p align="center"># 🎨 Gradient Selector</p>
 
 
 <p align="center">
