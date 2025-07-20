@@ -85,7 +85,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Neeraj Kumar**  
 B.Tech IT Final Year Student  
-[GitHub](https://github.com/Neerajkumar151) | [LinkedIn](https://www.linkedin.com/in/yourprofile)
+[GitHub](https://github.com/Neerajkumar151) | [LinkedIn](https://www.linkedin.com/in/neerajkumar1517/)
 
 ---
 
